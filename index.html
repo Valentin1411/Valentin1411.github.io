@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Imágenes con Descripción y Botones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .image-container {
+            display: inline-block;
+            margin: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .description {
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <div class="image-container">
+            <img src="ruta-a-tu-imagen1.jpg" alt="Imagen 1">
+        </div>
+        <div class="image-container">
+            <img src="ruta-a-tu-imagen2.jpg" alt="Imagen 2">
+        </div>
+        <div class="description">
+            <p>Descripción de las imágenes...</p>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='enlace-a-repositorio'">Repositorio</button>
+            <button onclick="window.location.href='enlace-a-diagramas'">Diagramas</button>
+        </div>
+    </div>
 </body>
 </html>
