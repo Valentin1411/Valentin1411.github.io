@@ -27,10 +27,16 @@
         .buttons {
             margin-top: 20px;
         }
-        .buttons button {
+        .buttons a {
+            display: inline-block;
             padding: 10px 20px;
             margin: 0 10px;
             font-size: 16px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
     </style>
@@ -47,9 +53,9 @@
             <p>Descripción de las imágenes...</p>
         </div>
         <div class="buttons">
-            <button onclick="window.location.href='enlace-a-repositorio'">Repositorio</button>
-            <button onclick="window.location.href='github.com/Valentin1411/Valentin1411.github.io/blob/main/proceso.html'">Diagramas</button>
+            <a href="enlace-a-repositorio">Repositorio</a>
+            <a href="enlace-a-diagramas">Diagramas</a>
         </div>
     </div>
 </body>
-</html> 
+</html>
