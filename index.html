@@ -1,61 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro de Imágenes con Descripción y Botones</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        .image-container {
-            display: inline-block;
-            margin: 20px;
-        }
-        .image-container img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-        .description {
-            margin-top: 20px;
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-        .buttons a {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 16px;
-            text-decoration: none;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="image-container">
-            <img src="https://github.com/Valentin1411/Valentin1411.github.io/blob/main/MOP_Logo.jpg" alt="Imagen 1">
-        </div>
-        <div class="image-container">
-            <img src="ruta-a-tu-imagen2.jpg" alt="Imagen 2">
-        </div>
-        <div class="description">
-            <p>Descripción de las imágenes...</p>
-        </div>
-        <div class="buttons">
-            <a href="enlace-a-repositorio">Repositorio</a>
-            <a href="https://github.com/Valentin1411/Valentin1411.github.io/blob/main/proceso.html">Diagramas</a>
-        </div>
-    </div>
-</body>
+<html>
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="Propuesta de visualizador web para el proceso de gestión y administración de contratos de obra pública del MOP, Región de Aysén">
+        <title>Visualizador web del PGAC - MOP</title>
+        <link rel="stylesheet" href="styles.css">
+        </head>
+
+    <body>
+        <header class="Encabezado">
+            <div class="logo-container">
+                <img id="dirplan" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\DIRPLAN.jpeg" alt="Logo MOP">
+            </div>
+            <h1 id="Arriba">Propuesta de visualizador para el Proceso de Gestión y Administración de Contratos de obras públicas</h1>
+            <div class="logo-container">
+                <img id="uaysen" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\UAYSEN.png" alt="Logo UAYSEN">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">BPMN</a></li>
+                <li><a href="#">Fases de procesos</a>
+                    <ul>
+                        <li><a href="licitacion.html">Preparación de antecedentes</a></li>
+                        <li><a href="ejecucion.html">Contratación y ejecución de obra pública</a></li>
+                        <li><a href="recepcion.html">Recepción de obra pública</a></li>
+                        <li><a href="#">Liquidación del contrato</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Normativas</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Contenido principal -->
+            <article>
+                <header>
+                    <h2> Proceso de Gestión y Administración de Contratos </h2>
+                    <p>Fecha de publicación: <time>2024-07-28</time></p>
+                </header>
+                <section>
+                    <h3>Ministerio de Obras Públicas</h3>
+                    <p>El Ministerio de Obras Públicas (MOP) forma parte de las 17 secreatarias de estado de la República de Chile,
+                        centrando su misión en la detección de la necesidades de la comunidad para el posterior desarrollo y entrega de servicios de infraestructura y proyectos de regulación
+                        del recurso hídrico del territorio.
+                    </p>
+                    <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\inicio\0_Proceso_OK.png" alt="Trulli">
+
+                    <hr>
+                    <p>Para cumplir con sus declaraciones misionales, es necesaria la identificación de necesidades de la comunidad, formulación de iniciativas de inversión,
+                        su planificación, ejecución, control, monitoreo y entrega del servicio de infraestructura o resultado del proyecto. Para tener una visión
+                        general de sus actividades, se propone en la siguiente figura un diagrama que reúne los principales procesos realizados por el MOP.
+                    </p>
+                </section>
+                <section>
+                    <h3>Proceso de gestión y administración de contratos</h3>
+                    <p>El Proceso de Gestión y Administración de Contratos (PGAC), reúne todas las actividades desarrolladas por los servicios del Ministerio
+                        para llevar a cabo la ejecución de la iniciativas de inversión de contratos de obras públicas. Este corresponde al último proceso previo
+                        a la entrega de los servicios de infraestructura de la comunidad, teniendo como base el Programa Público de Inversiones Regionales (PROPIR).
+                    </p>
+                </section>
+                <section>
+                    <h3>Propuesta de visualizador</h3>
+                    <p>La presente página web tiene por objetivo entregar una propuesta de un visualizador del PGAC, para mejorar su entendimiento por medio
+                        de la sistematización de sus actividades, haciendo uso de una serie de diagramas basados en el Business Process Model and Notation (BPMN),
+                        y en la normativa vigente, destacando el reglamento de contratos de obras públicas (contenido en el Decreto N° 75 del MOP). Además, se trabaja
+                        con la Dirección Regional de Planeamiento de la Región de Aysén para la recepción de retroalimentación y validación de los diagramas propuestos.
+                        En la siguiente figura, se presenta una propuesta de diagrama del proceso general, donde se definen cuatro fases con sus respectivos subprocesos, que
+                        que permiten sistematizar el conjunto de actividades realizadas por los servicios para la ejecución de sus contratos de obra pública.</p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <address>
+                valentin.solis@alumnos.uaysen.cl
+            </address>
+            Enlaces a redes sociales
+           <p>Copyright</p> 
+        </footer>
+    </body>
 </html>

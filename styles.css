@@ -1,0 +1,241 @@
+/* Cuerpo de la página */
+body {
+    width: auto;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header.Encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000000;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    flex: 2;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.logo {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+/* Navegador */
+nav {
+    width: 100%;
+    background-color: #0F69B4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #EB3C46;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0F69B4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul ul li a {
+    padding: 10px 20px;
+}
+
+/* Contenido */
+main {
+    padding: 20px;
+}
+
+div.Contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.Contenido aside {
+    width: 25%;
+    background-color: #EB3C46;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Botonera (Aside) */
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre botones */
+}
+
+aside ul li {
+    text-align: center;
+}
+
+aside ul li a {
+    display: block;
+    padding: 15px 20px; /* Tamaño del botón */
+    background-color: #0F69B4; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efecto de botón */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+aside ul li a:hover {
+    background-color: #2678C0; /* Color de fondo en hover */
+    transform: translateY(-2px); /* Efecto de "elevación" al hacer hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hacer hover */
+}
+
+aside ul li a:active {
+    background-color: #0D4A78; /* Color de fondo en activo */
+    transform: translateY(0); /* Efecto de "presionado" */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más pequeña al hacer clic */
+}
+
+div.Subprocesos {
+    position: sticky;
+    top: calc(100% * 0.25);
+    bottom: calc(100% * 0.25);
+}
+
+div.Contenido aside h3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+div.Contenido div.Diagramas {
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0F69B4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer address {
+    font-style: normal;
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+section {
+    background: linear-gradient(135deg, #f4f4f4, #ffffff); /* Gradiente suave de gris claro a blanco */
+    border-left: 8px solid #0F69B4; /* Borde izquierdo ancho y colorido */
+    padding: 25px; /* Espaciado interno */
+    margin-bottom: 35px; /* Espaciado entre secciones */
+    border-radius: 12px; /* Bordes redondeados para darle suavidad al diseño */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para darle profundidad */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transición suave para interactividad */
+}
+
+section:hover {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Cambio de gradiente al pasar el cursor */
+    transform: translateY(-5px); /* Elevación suave en hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hacer hover */
+}
+
+section h3 {
+    font-family: 'Arial Black', sans-serif; /* Fuente más gruesa para destacar */
+    color: #EB3C46; /* Color rojo para los títulos de las secciones */
+    text-transform: uppercase; /* Mayúsculas para hacer el título más impactante */
+    letter-spacing: 1px; /* Espaciado entre letras para mejorar la legibilidad */
+    margin-bottom: 15px; /* Espaciado inferior entre el título y el contenido */
+}
+
+section p {
+    font-size: 1.1em; /* Tamaño ligeramente mayor para mejorar la lectura */
+    line-height: 1.7; /* Mayor espacio entre líneas para una mejor legibilidad */
+    color: #555; /* Color de texto gris medio, para un contraste suave */
+    margin-bottom: 15px; /* Espaciado entre párrafos */
+}
+
+section img {
+    max-width: 100%; /* Las imágenes se ajustan al ancho del contenedor */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    margin: 20px 0; /* Espaciado alrededor de las imágenes */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Sombra suave en las imágenes */
+}
+
+
