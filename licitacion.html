@@ -12,11 +12,11 @@
     <body>
         <header class="Encabezado">
             <div class="logo-container">
-                <img id="dirplan" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\DIRPLAN.jpeg" alt="Logo MOP">
+                <img id="dirplan" class="logo" src="imagenes/logos/DIRPLAN.jpeg" alt="Logo MOP">
             </div>
             <h1 id="Arriba">Propuesta de visualizador para el Proceso de Gestión y Administración de Contratos de obras públicas</h1>
             <div class="logo-container">
-                <img id="uaysen" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\UAYSEN.png" alt="Logo UAYSEN">
+                <img id="uaysen" class="logo" src="imagenes/logos/UAYSEN.png" alt="Logo UAYSEN">
             </div>
         </header>
         <nav>
@@ -25,8 +25,8 @@
                 <li><a href="#">BPMN</a></li>
                 <li><a href="#">Fases de procesos</a>
                     <ul>
-                        <li><a href="licitacion.html">Preparación de antecedentes</a></li>
-                        <li><a href="ejecucion.html">Contratación y ejecución de obra pública</a></li>
+                        <li><a href="licitacion.html">Licitación y adjudicación</a></li>
+                        <li><a href="ejecucion.html">Ejecución de obra pública</a></li>
                         <li><a href="recepcion.html">Recepción de obra pública</a></li>
                         <li><a href="#">Liquidación del contrato</a></li>
                     </ul>
@@ -35,16 +35,16 @@
             </ul>
         </nav>
         <main>
-            <!-- Contenido principal -->
+            <!-- Contenido principal -->            
             <div class="Contenido">
+                <a href="#Arriba" class="btn-top">Arriba</a>                
                 <aside>
                     <div class="Subprocesos">
                         <h3>Subprocesos</h3>
                         <ul>
                             <li><a href="#Preparar">Preparar antecedentes de licitación</a></li>
                             <li><a href="#Publicar">Publicar licitación</a></li>
-                            <li><a href="#Evaluar">Evaluar propuestas</a></li>
-                            <li><a href="#Arriba">Arriba</a></li>
+                            <li><a href="#Evaluar">Evaluar propuestas</a></li>                            
                         </ul>
                     </div>
                 </aside>
@@ -55,7 +55,7 @@
                             <p>Fecha de publicación: <time>2024-07-28</time></p>
                         </header>
                         <section>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\licitacion\Fase_1.png" alt="Trulli">
+                            <img src="imagenes/licitacion/Fase_1.png" alt="Trulli">
                             <p>La fase de licitación y adjudicación de contratos de obra pública, toma como entrada el programa base de las iniciativas
                                 de inversión a desarrollar durante el año prsupuestario vigente, establecido por el Programa Público de Inversiones Regionales (PROPIR) aprobado por el 
                                 Congreso Nacional en el mes de diciembre del año previo durante la aprobación de la Ley de Presupuestos.
@@ -85,22 +85,256 @@
                         </section>
                         <section>
                             <h3 id="Preparar">Preparar antecedentes de licitación</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\licitacion\Preparar_antecedentes.png" alt="Trulli">
+                            <img src="imagenes/licitacion/Preparar_antecedentes.png" alt="Preparar documentos de licitación">
                             <hr>                    
                         </section>
                         <section>
                             <h3 id="Publicar">Publicar licitación</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\licitacion\Publicar_licitacion.png" alt="Trulli">
+                            <img src="imagenes/licitacion/Publicar_licitacion.png" alt="Publicar licitación">
+                            <ol>
+                                <li>La licitación de comienzo con la recepción del Decreto Supremo que indica el monto
+                                    máximo del contrato (o que este en tramitación) y con la documentación de la licitación
+                                    lista para su publicación.
+                                </li>
+                                <li>Previo a la publicación de la licitación en Mercado Público, se debe realizar su autorización.
+                                    La autoridad que tiene la facultad para autorizar su publicación, dependera del monto del presupuesto
+                                    del contrato, tal como indica el Decreto 1093 del MOP sobre el reglamento de Montos de contratos de obras públicas.
+                                    <table>
+                                        <tr>
+                                            <th colspan="2">Autorización para licitación pública o privada con trámite previo 
+                                                de licitación pública
+                                            </th>                                                                                     
+                                        </tr>
+                                        <tr>
+                                            <th>Autoridad</th>
+                                            <th>Monto del Contrato [UTM]</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Director General con V°B° del Ministro de OOPP</td>
+                                            <td>Igual o superior a 300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Director General</td>
+                                            <td>Igual o superior a 200.000 e inferior a 300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Directores Nacionales con V°B° del Director General</td>
+                                            <td>Igual o superior a 150.000 e inferior a 200.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Directores Nacionales</td>
+                                            <td>Inferior a 150.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jefe de Oficinas Regionales con V°B° de SEREMIS</td>
+                                            <td>Inferior a 120.000</td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <th colspan="2">Autorización para licitación privada sin trámite previo 
+                                                de licitación pública, trato directo, administración delegada o directa
+                                            </th>                                                                                   
+                                        </tr>
+                                        <tr>
+                                            <th>Autoridad</th>
+                                            <th>Monto del Contrato [UTM]</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Director General con V°B° del Ministro de OOPP</td>
+                                            <td>Hasta 10.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Director General</td>
+                                            <td>Inferior a 8.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Directores Nacionales con V°B° del Director General</td>
+                                            <td>Inferior a 6.500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Directores Nacionales</td>
+                                            <td>Inferior a 5.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jefe de Oficinas Regionales con V°B° de SEREMIS</td>
+                                            <td>Inferior a 3.500</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>Las bases deben indicar la fecha para la presentación de propuesta, respetando
+                                    los siguientes plazos mínimos entre la publicación del llamado y su fecha de apertura.
+                                    <table>
+                                        <tr>
+                                            <th>Costo total estimado [UTM]</th>
+                                            <th>Días</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Menor a 1.000</td>
+                                            <td>15 días</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entre 1.000 y menos de 20.000</td>
+                                            <td>30 días</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entre 20.000 y 80.000</td>
+                                            <td>45 días</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mayor a 80.000</td>
+                                            <td>60 días</td>
+                                        </tr>
+                                    </table>
+                                    Los plazos previamente mencionados pueden verse modificados por la autoridad
+                                    que llama a licitación, ante circunstancias especiales debidamente certificadas.
+                                </li>
+                                <li>La publicación de la licitación consiste en subir la documentación en la plataforma
+                                    de Mercado Público, espacio desde donde los proponentes interesados puedan visualizarlos y
+                                    formular su propuesta.
+                                </li>
+                                <li>La recepción de propuestas se realiza por medio de la plataforma de Mercado Público.
+                                </li>
+                                <li> El periodo entre la publicación y la apertura se denomina "periodo de serie de preguntas y respuestas". 
+                                    En este periodo de tiempo pueden surgir circunstancias que deriben a la actualización de los antecedentes de la licitación
+                                     y/o una reevaluación de la iniciativa producto de un aumento en el presupuesto.
+                                </li>
+                                <li>Previo a la fecha de apertura, el Secretario/a Regional Ministerial debe designar a los 
+                                    integrantes que formaran parte de la comisión de apertura y al funcionario que pretende nomminar
+                                    como el Inspector Fiscal de la obra.
+                                </li>
+                                <li>El funcionario que se pretende nominar como Inspector Fiscal, debe analizar el proyecto previo a su adjudicación para la 
+                                    confección de un informe de inspeccionabiliad, el cual se debe remitir a la Comisión de Evaluación.
+                                </li>
+                                <li>Una vez llegada la fecha de apertura no se reciben mas propuestas y se procede con su evaluación técnica y económica.
+                                </li>
+                            </ol>
+                            <h5>Situaciones a considerar</h5>
+                            <ul>
+                                <li>Llegada la fecha de apertura, puede darse el escenario de no haber recibido ninguna propuesta, declarando la licitación como desierta. Frente a esta situación, 
+                                    la Dirección puede reformular la licitación, optar por una licitación privada o postergarla.</li>
+                                <li>Contratistas inscritos en una categoria del registro, pueden participar en licitaciones del mismo registro con categoria inferior.</li>
+                                <li>Contratistas inscritos en el Registro de Obras Mayores pueden participar en licitaciones de obras estipuladas en el Registro de 
+                                    Obras Menores, de acuerdo a lo indicado en la tabla de equivalencias entre los registros de contratistas.
+                                </li>
+                                <li>Contratistas pueden participar en obras en una categoría inmediatamente superior a la cual estuviesen inscritos, siempre y cuando 
+                                    el presupuesto estimativo sea equivalente corresponda a un máximo del 30% del rango de la categoría inmediatamente superior con respecto 
+                                    a la actual en la que estuvieren registrados.
+                                </li>
+                                <li>Para licitaciones en las cuales se abrió un Registro Especial, solo podran participar aquellos contratistas que hayan 
+                                    sido aceptados en ese Registro
+                                </li>
+                                <li>Para que un contratista pueda participar en una licitación, deberá acreditar una capacidad económica mínima disponible 
+                                    equivalente al 10% del presupuesto oficial o estimativo, según proceda.
+                                </li>
+                            </ul>                            
+                            
+                        
                         </section>
                         <section>
                             <h3 id="Evaluar">Evaluar propuestas</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\licitacion\Evaluar.png" alt="Trulli">
-        
-                            <h4>Evaluación técnica</h4>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\licitacion\Evaluacin_Tecnica.png" alt="Trulli">
+                            <img src="imagenes/licitacion/Evaluar.png" alt="Evaluar propuestas">
+                            La evaluación de propuestas se subdivide en dos etapas:
+                            <ol>
+                                <li>Evaluación técnica: Se verifica la recepción de todos los antecedentes solicitados en el proyecto, para su 
+                                    posterior análisis a fin de verificar que la propuesta cumple con todos los requisitos técnicos exigidos por 
+                                    el proyecto.
+                                </li>
+                                <li> Existe un plazo entre la apertura técnica y la económica. Si los 
+                                    documentos de la licitación no establece el plazo entre los dos actos, se entendera que 
+                                    este último se realizara diez días hábiles después de la apertura de las ofertas técnicas.
+                                </li>
+                                <li>Evaluación económica: Se procede a la apertura de las ofertas económicas de aquellas propuestas 
+                                    técnicamente aprobadas, dando a conocer los valores totales cotizados por cada proponente. Luego,
+                                    se realiza un análisis de la oferta económica, buscando cotejar la consistencia entre la oferta técnica 
+                                    y el análisis de precios, de acuerdo a la metodología estipulada en los documentos de licitación.
+                                </li>
+                                <li>Finalizada la evaluación económica, se redacta un informe de adjudicación, donde se indica a aquel proponente 
+                                    que se adjudica el proyecto.
+                                </li>
+                            </ol>
+                            <h5>Situaciones a considerar</h5>
+                            <ul>
+                                <li>Durante la evaluación, puede derivar al rechazo de todas las propuestas con expresión de causa, dejando el proceso de licitación sin 
+                                    un adjudicatario. Frente a esto, la Dirección puede reformular la licitación, optar por una licitación privada o postergarla.</li>
+                                <li>Tambien se puede dar el escenario donde un proponente levante un reclamo frente al rechazo de su propuesta durante la evaluación técnica.
+                                    Si su reclamo es aceptado, ya sea por la Dirección o la Contraloría General de la República, se debe retrotraer el acto desde la evaluación 
+                                    económica a la técnica, a fin de considerar la oferta del proponente con las demas durante la evaluacion económica.</li>
+                                <li>El MOP puede realizar cambios al formulario especial para la oferta económica hasta un plazo de tres días hábiles previa fecha de apertura.</li>
+                                <li>La forma de presentar la propuesta económica, deberá estar estipuladas en las bases de la licitación, pudiendo ser esta por administración delegada, por serie 
+                                    de precios unitarios, por suma alzada o una combinación de estos dos últimos. Se podrá incluir valores pro forma  y globales fijos.
+                                </li>
+                                <li>La propuestas que entreguen los contratistas pueden presentar variantes que presenten algún 
+                                    beneficio para el Fisco.
+                                </li>
+                            </ul>
                             
+                            <h4>Evaluación técnica</h4>
+                            <img src="imagenes/licitacion/Evaluacin_Tecnica.png" alt="Evaluación técnica">
+                            <ol>
+                                <li> Llegada la fecha de apertura de la oferta técnica, la Comisión de Apertura abre cada una de las ofertas técnicas 
+                                    y verifica la inclusión de todos los antecedentes solicitados en los documentos de la licitación.
+                                </li>
+                                <li> Revisadas las propuestas, la comisión formaliza el cierre del acto por medio de la firma del acta de apertura técnica, donde se emiten 
+                                    comentarios u observaciones producto de la verificación de los antecedentes solicitados.
+                                </li>
+                                <li>Verificada la inclusión de los antecedentes solicitados, la Comisión de Evaluación realiza un análisis de las propuestas, constatando el cumplimiento 
+                                    de los requisitos técnicos establecidos en los documentos de la licitación y de la capacidad económica mínima 
+                                    disponible del proponente. Resultado del análisis, se califican las propuestas como
+                                     técnicamente aceptables o rechazables.
+                                </li>
+                                <li>Terminado el análisis y calificación de todas las propuestas, se procede con la redacción y emisión del informe 
+                                    donde se indican todas aquellas propuestas rechazadas, dando por terminada la evaluación técnica de propuestas.
+                                </li>
+                            </ol>
+                            <h5>Situaciones a considerar</h5>
+                            <ul>
+                                <li>Los proponentes pueden levantar reclamos ante las observaciones y/o rechazos de sus propuestas, pudiendo llegar 
+                                    a dilatar el subproceso de evaluación de las propuestas en caso de que estas sean acogidas durante la evaluación económica de las propuestas. Estas pueden ser realizadas 
+                                    en la plataforma de Mercado Público o por la Oficina de Partes del Servicio.</li>
+                                <li>Con la emisión del informe de las propuestas rechazadas, la Comisión de Evaluación puede rechazar todas las propuestas presentadas, dejando el proceso de licitación sin 
+                                    proponente adjudicatario. Frente a esto, la Dirección puede reformular la licitación, optar por una licitación privada o postergarla.</li>
+                                <li>Si la cantidad de ofertas técnicamente aceptables son inferiores a tres, la autoridad pertinente 
+                                    puede rechazar todas las ofertas con expresión de causa.
+                                </li>
+                                <li>Ante la situación de que la adjudicación del contrato se realice por trato directo, la Dirección deberá velar que las empresas 
+                                    convocadas no se encuentran relacionadas, por medio de la consulta del Registro de Contratistas.</li>
+                            </ul>                            
+                            <h5>Sanciones</h5>   
+                            <ul>
+                                <li>Si la Comisión de Evaluación detecta la participación de contratistas relacionados en una misma licitación, se excluira su participación. Además, la 
+                                    Comisión del Registro sancionara a los contratistas con una suspensión del Registro por un plazo de cinco años.</li>
+                            </ul>                               
                             <h4>Evaluación económica</h4>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\licitacion\evaluacion_economica.png" alt="Trulli">
+                            <img src="imagenes/licitacion/evaluacion_economica.png" alt="Evaluación económica">
+                            <ol>
+                                <li>Si los documentos de la licitación nada dicen respecto a la fecha de la apertura de la oferta económica, se dara 
+                                    por entendido que este acto se realizará diez días hábiles después de la
+                                    apertura de las ofertas técnicas.
+                                </li>
+                                <li>Durante la apertura económica, la Comisión de Apertura debe informar a los proponentes sobre los resultados 
+                                    de la evaluación técnica. Ademas, debe abrir las ofertas económicas solo de aquellas propuestas técnicamente aprobadas. Finalmente,
+                                    se debe formalizar el cierre de acto con la firma del acta de apertura de la oferta económica. El desarrollo de todas actividades se 
+                                    realizan en la plataforma de Mercado Público.
+                                </li>
+                                <li> Verificada la inclusión de los antecedentes solicitados para la oferta económica, la Comisión de Evaluación procede a comprobar la consistencia entre 
+                                    la oferta económica	y técnica.
+                                </li>
+                                <li> Constatada la consistencia entre las dos propuestas, la Comisión de Evaluación procede a la redacción y emisión del informe de adjudicación a 
+                                    la autoridad correspondiente con la propuesta mas conveniente, economicamente, para el Fisco. La selección de la propuesta consiste en una pre-selección para una posterior 
+                                    validación artimética de la oferta pre-seleccionada.
+                                </li>
+                                <li>La autoridad que adjudica (SEREMI o el Director General, depende del monto del contrato), en caso de no tener observaciones al informe de adjudicación,
+                                    procede la comunicación de los resultados a los interesados.
+                                </li>
+                            </ol>
+                            <h5>Situaciones a considerar</h5>
+                            <ul>
+                                <li>Se puede retrotraer el acto a la evaluación técnica si es que, durante la evaluación económica, se acoge 
+                                    un reclamo emitido durante esta última.</li>
+                                <li>La Comisión de Evaluación puede retrotraer el acto desde la emisión del informe de adjudicación al análisis de la 
+                                    oferta económica si se acoge un reclamo recibido durante la apertura económica.</li>
+                            </ul>                             
                         </section>
                     </article>
                 </div>     

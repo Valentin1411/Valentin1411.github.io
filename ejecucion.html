@@ -12,11 +12,11 @@
     <body>
         <header id="Arriba" class="Encabezado">
             <div class="logo-container">
-                <img id="dirplan" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\DIRPLAN.jpeg" alt="Logo MOP">
+                <img id="dirplan" class="logo" src="imagenes/logos/DIRPLAN.jpeg" alt="Logo MOP">
             </div>
             <h1>Propuesta de visualizador para el Proceso de Gestión y Administración de Contratos de obras públicas</h1>
             <div class="logo-container">
-                <img id="uaysen" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\UAYSEN.png" alt="Logo UAYSEN">
+                <img id="uaysen" class="logo" src="imagenes/logos/UAYSEN.png" alt="Logo UAYSEN">
             </div>
         </header>
         <nav>
@@ -25,10 +25,10 @@
                 <li><a href="#">BPMN</a></li>
                 <li><a href="#">Fases de procesos</a>
                     <ul>
-                        <li><a href="licitacion.html">Preparación de antecedentes</a></li>
-                        <li><a href="ejecucion.html">Contratación y ejecución de obra pública</a></li>
+                        <li><a href="licitacion.html">Licitación y adjudicación</a></li>
+                        <li><a href="#">Ejecución de obra pública</a></li>
                         <li><a href="recepcion.html">Recepción de obra pública</a></li>
-                        <li><a href="#">Liquidación del contrato</a></li>
+                        <li><a href="liquidacion.html">Liquidación del contrato</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Normativas</a></li>
@@ -37,6 +37,7 @@
         <main>
             <!-- Contenido principal -->
             <div class="Contenido">
+                <a href="#Arriba" class="btn-top">Arriba</a> 
                 <aside>
                     <div class="Subprocesos">
                         <h3>Subprocesos</h3>
@@ -45,20 +46,21 @@
                             <li><a href="#Terreno">Entrega de terreno y trazado de obras</a></li>
                             <li><a href="#Inspeccion">Inspección fiscal</a></li>
                             <li><a href="#Pagos">Estados de pago y retenciones</a></li>
+                            <li><a href="#OEI">Resolver sanción (OEI)</a></li>
+                            <li><a href="#Subcontratacion">Subcontratación de obras</a></li>
                             <li><a href="#Modificacion">Modificación de contrato</a></li>
-                            <li><a href="#Sancion">Sanciones</a></li>
-                            <li><a href="#Arriba">Arriba</a></li>
+                            <li><a href="#Sancion">Sanciones</a></li>                            
                         </ul>
                     </div>
                 </aside>
                 <div class="Diagramas">
                     <article>
                         <header>
-                            <h2> Fase de ejecución de obra pública </h2>
+                            <h2>Fase de ejecución de obra pública</h2>
                             <p>Fecha de publicación: <time>2024-07-28</time></p>
                         </header>
                         <section>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\ejecucion\Fase_2.png" alt="Fase de jecución de Obra Pública">
+                            <img src="imagenes/ejecucion/Fase_2.png" alt="Fase de jecución de Obra Pública">
                             <p>La fase de ejecución de obra pública, toma como entrada la resolución que tramita la adjudicación del contrato por parte del proponente 
                                 seleccionado durante la fase de adjudicación. Una vez tramitada, se procede con el perfeccionamiento del contrato, donde se formaliza
                                 la relación contractual entre el contratista y el Ministerio.
@@ -76,28 +78,405 @@
                         </section>
                         <section>
                             <h3 id="Perfeccionar">Perfeccionar contrato</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\ejecucion\Perfeccionamiento_Contrato.png" alt="Perfeccionamiento del contrato">
-                            <hr>                    
+                            <img src="imagenes/ejecucion/Perfeccionamiento_Contrato.png" alt="Perfeccionamiento del contrato">
+                            <ol>
+                                <li>El contrato empieza a regir desde que la resolución o decreto emitido por la Contraloría General de la República que aprueba el contrato 
+                                    de ejecución de obra pública, ingrese totalmente tramitado a la oficina de partes de la Dirección General o Dirección, según proceda.
+                                </li>
+                                <li>La Oficina de Partes debe consignar la fecha de la tramitación del decreto o resolución en las transcripciones de los documentos 
+                                    correspondientes.
+                                    <ul>
+                                        Formarán parte del contrato:
+                                        <li>Reglamento para contratos de obras públicas (Decreto 75 del MOP).</li>
+                                        <li>Bases Administrativas y Técnicas entregados  durante la licitación.</li>
+                                        <li>Serie de preguntas y respuestas y cualquier otra documentación aclaratoria emitida por el MOP, previo a la fecha de apertura.</li>
+                                        <li>Todo otro documento que se defina en las bases</li>
+                                        <li>La oferta del contratista adjudicatario, junto con aclaraciones solicitadas durante el análisis de las ofertas.</li>
+                                    </ul>                
+                                </li>
+                                <li>El contratista debe suscribir ante notario, tres transcripciones de los documentos del contrato en señal de aceptación. Además, debe protocolizar uno de los ejemplares ante 
+                                    el mismo notario.
+                                </li>
+                                <li>El contratista tiene un plazo de 30 días (desde tramitación de la Oficina de Partes de decreto o resolución), para depositar una de las suscripciones en el archivo especial de 
+                                la Dirección correspondiente. La entrega debe realizarla el mismo contratista o un representante legal. 
+                                Dentro de esta documentación se debe considerar:
+                                <ul>
+                                    <li>Bases administrativas</li>
+                                    <li>Bases de prevención de riesgos</li>
+                                    <li>Bases ambientales</li>
+                                    <li>Especificaciones técnicas</li>
+                                    <li>Planos</li>
+                                    <li>Otros antecedentes que sirvieron de fundamento al contrato</li>
+                                </ul>
+                                La no entrega dentro del plazo estipulado, dara la facultad a la Dirección de solicitar una sanción que consiste en la suspención 
+                                del Registro hasta por un periodo de un año.
+                                </li>
+                                <li>El contratista tiene un plazo de 30 días (desde tramitación de la Oficina de Partes de decreto o resolución) de entregar a la Fiscalía del Ministerio, dos copias del contrato protocolizado. 
+                                    La no entrega dentro del plazo estipulado, dara la facultad a la Dirección de solicitar una sanción que consiste en la suspención 
+                                    del Registro hasta por un periodo de un año.</li>
+                                <li>Verificada la recepción del contrato protocolizado, la Fiscalía del Ministerio debe remitir uno de los ejemplares a la Dirección correspondiente.</li>
+                                <li>La Dirección debe archivar la copia del contrato protocolizado recibida. Luego, debe proceder con informar al Registro General de Contratistas sobre las características esenciales del contrato,
+                                    destacandose:
+                                    <ul>
+                                        <li>Tipo de contrato</li>
+                                        <li>Contratista adjudicatario</li>
+                                        <li>Fecha de inicio</li>
+                                        <li>Plazo de ejecución</li>
+                                    </ul>
+                                </li>
+                                <li> El contratista tiene un plazo de 30 días de presentar las boletas o pólizas de garantía de seriedad de la oferta u otras 
+                                    que indiquen las bases de la licitación. La no entrega dentro del plazo, da la facultad a la Dirección de solicitar una sanción 
+                                    que consiste en la suspensión del Registro hasta por un periodo de un año.
+                                </li>
+                                <li>En caso de que la obra trate de una Obra Mayor, esta puede ejecutarse por medio de la conformación de un consorcio. Frente a esto, los contratistas que forman el consorcio deben formar una sociedad 
+                                    dentro de los siguientes 60 días desde la tramitación del decreto/resolución en la Oficina de partes.
+                                    No podran formar un consorcio:
+                                    <ul>
+                                        <li>Contratistas relacionados</li>
+                                        <li>Contratistas que hayan recibido una calificación inferior a 5,5 en los últimos dos años</li>
+                                    </ul>
+                                    Salvo en casos excepcionales estipulados por el Director Generesl, empresas extranjeras podran 
+                                    formar parte de consorcios, siempre y cuando estas se encuentren inscritas en 
+                                    el Registro de Obras Mayores.
+                                </li>
+                                <li>Se se adjudica la obra a un consorcio, la Dirección debe informar al Registro General de Contratistas sobre:
+                                    <ul>
+                                        <li>Nombre de la obra</li>
+                                        <li>Nombre de los contratistas participantes</li>
+                                        <li>Porcentaje de participación de cada contratista</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <h4>Recepción de boletas de garantías y/o polizas</h4>
+                            <img src="imagenes/ejecucion/Recepcion_garantia.png" alt="Perfeccionamiento del contrato">
+                            <ol>
+                                <li>Desde la fecha en que empieza a regir elcontrato, el contratista tiene un plazo de 30 días para hacer entrega de la garantía o póliza de seguro 
+                                    para la seriedad de oferta. Esta debe ser estipulada en Unidades de Fomento. Su vigencia y monto dependera de si la obra corresponde a una Obra Mayor o Menor.
+                                    Si se opta por una póliza de seguro, esta debe estar inscrita en el Registro de Pólizas de la Superintendencia de Valores y Seguros, como "Poliza de Seguro de Garantía 
+                                    de Obras Públicas", aprobada por el MOP, sin endoso ni clausulo u otra adición que límite las atribuciones conferidas al MOP.
+                                </li>
+                                <table>
+                                    <tr>
+                                        <th>Tipo de obra</th>
+                                        <th>Monto</th>
+                                        <th>Vigencia</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Obra Mayor</td>
+                                        <td>3% del valor del contrato</td>
+                                        <td>Vigencia del contrato mas 24 meses</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Obra Menor</td>
+                                        <td>5% del valor del contrato</td>
+                                        <td>Vigencia del contrato mas 18 meses</td>
+                                    </tr>                                 
+                                    
+                                </table>
+                                <li>En caso que se adhieran obras nuevas u extraordinarias, el contratista deberá rendir garantías sobre estas, respetando la vigencia y porcentajes 
+                                    de la tabla anterior.
+                                </li>
+                                <li>Si el contrato se extiende mas allá del plazo de vigencia, el contratista deberá actualizar la vigencia de las garantías entregadas hasta 
+                                    30 días antes del vencimiento de la garantía vigente, por el período estipulado por la Dirección. 
+                                    <ul>
+                                        <li>Si el contratista no renueva las garantías previo a plazo precitado, la Dirección queda facultada para hacerla efectiva, debiendo 
+                                            informar de esta situación al Registro General de Contratistas.</li>
+                                        <li>Si contratista no renueva las garantías, la Dirección puede solicitar su suspensión del Registro hasta por un período de un año.</li>
+                                    </ul>
+                                </li>
+                                <li>Se exigirá al contratista una garantía adicional para el fiel cumplimiento del contrato cuando:
+                                    <ul>
+                                        <li>Presupuesto de la propuesta es inferior en mas de un 15% del presupuesto oficial.</li>
+                                        <li>Presupuesto de variante propuesta es menor al 20% del presupuesto de una parte específica del proyecto (salvo 
+                                            que las bases administrativas indiquen un porcentaje diferente).</li>
+                                        <li>La vigencia de esta garantía adicional correspondera a la vigencia del contrato mas 12 meses.</li>
+                                    </ul>
+                                    Además, si el presupuesto oficial no se presenta previa al acto de apertura, se debe reembolsar al contratista el costo efectivo producido por 
+                                    la garantía adicional, con un máximo equivalente a un 6% anual sobre el monto de dicha garantía.
+                                </li>
+                                <li>Si se realiza traspaso del contrato a u nuevo contratista, este último deberá entregar garantías que cubran los canjes a retenciones que haya 
+                                    realizado el contratista original.
+                                </li>
+                                <li>Si las bses administrativas así lo indican, se podra exigir al contratista un seguro de responsabilidaad civil ante terceros, 
+                                    <ul>
+                                        <li>Si vigencia será equivalente al plazo de ejecución de obras mas un año.</li>
+                                        <li>Podra contemplar un deducible no superior al 2% del monto asegurado.</li>
+                                    </ul>
+                                </li>
+                                <li>La Dirección podra ordenar, si así lo dicen las bases, una garantía que resguarde aquellas obras que a su juicio corran mayor 
+                                    riesgo, buscando cubrir permanentemente, por lo menos, el 80% de su valor.
+                                </li>
+                            </ol>
+                            <!---
+                            <h5>Situaciones/aspectos a considerar</h5>      
+                            <ul>
+                                <li>El domicilio civil del contratista debe constituirse en la comuna de Santiago (Para contratos de Obras Mayores) 
+                                    o en la respectiva capital regional (Para contratos de Obras Menores).</li>
+                                <li>Si el contratista no suscribiere ni protocolizare el contrato dentro de los 30 días desde tramitada la resolución o decreto que 
+                                    aprueba el contrato, la Dirección queda facultada para dar termino anticipado del contrato, haciendo retención de la garantía de seriedad 
+                                    de oferta. Además, la Dirección puede solicitar su suspensión del Registro por un periodo hasta por un año.
+                                </li>
+                                <li>La vigencia y monto de la garantía o poliza para la seriede de oferta, puede aumentar si la Dirección así lo estima conveniente.</li>
+                                <li>Ante una solicitud de traspaso del contrato, se debe recibir la garantía del nuevo contratista (Fijado por la autoridad que acepta el traspaso).
+                                    Además, deberá rendir garantías sobre los canjes de retenciones que hubiese efectuado el contratista original.
+                                </li>
+                            </ul>-->    
                         </section>
                         <section>
                             <h3 id="Terreno">Entrega de terreno y trazado de obras</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\ejecucion\Entrega_Terreno.png" alt="Entrega de terreno y trazado de obras">
+                            <img src="imagenes/ejecucion/Entrega_Terreno.png" alt="Entrega de terreno y trazado de obras">
                         </section>
+                        <ol>
+                            <li>Llegada la fecha de entrega y trazado de obras, el Inspector Fiscal debe formalizar la entrega de terreno y trazado de obras al contratista 
+                                con la firma del acta que así lo estipula.
+                            </li>
+                            <li>Si el periodo de ejecución de las obras es superior a un año, se establecerán los puntos de referencia para la entrega 
+                                de aquella sección a ejecutar en el transcurso del año. La entrega de las secciones se hara de acuerdo al 
+                                calendario de entrega de terreno y del trazado de obras presentado por el MOP en las bases administrativas.
+                            </li>
+                            <li>Si el contratista no asiste a la entrega, la Dirección fijara una nueva fechapara la entrega y trazado de obrasque no exceda los 8 días.</li>
+                            <li>Si el contratista no asistiere por segunda vez, la Dirección queda facultada para dar termino anticipado al contrato.</li>
+                            <li>Finalizada la entrega y trazado de la obra (o secciones de esta), el Inspector Fiscal y el contratista firmarán un acta, formalizando así la entrega.</li>
+                            <li>Si la entrega presenta atrasos que no sean imputables al contratista, se debe proceder con el pago de los gastos directos en que haya incurrido el contratist, previamente 
+                                verificados por el inspector fiscal, y con la modificación del plazo del contrato.
+                            </li>
+                        </ol>
                         <section>
                             <h3 id="Inspeccion">Inspección Fiscal</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\ejecucion\Inspeccion_Fiscal.png" alt="Inspección Fiscal">
+                            <img src="imagenes/ejecucion/Inspeccion_Fiscal.png" alt="Inspección Fiscal">
+                            <ol>
+                                <li>Sobre desvincuación de subcontratista o trabajador (Art 112)</li>
+                                <ol type="a">
+                                    <li>El Inspector Fiscal podra ordenar desvinculación de alguna empresa subcontratista o trabajador ante problemas relacionados a 
+                                        insubordinación, desorden, incapacidad u algún otro motivo grave comprobado.
+                                    </li>
+                                    <li>La orden se debe impartir por escrito y dejar constancia de esta en el Libro de Obras.</li>
+                                    <li>El incumplimiento de la orden sera sancionada mediante con una multa diaria de acuerdo a la siguiente tabla.
+                                        <table>
+                                            <tr>
+                                                <th>Tipo de obra</th>
+                                                <th>Multa diaria en UTM</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Obra Menor</td>
+                                                <td>0,5 a 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Obra Mayor o Registro Especial</td>
+                                                <td>3 a 8</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                </ol>
+                                <li>Sobre el rechazo de materiales</li>
+                                <ol type="a">
+                                    <li>El contratista tiene la facultad de rechazar los materiales a utilizar en las obras en base a su baja calidad.</li>
+                                    <li>Si existe riesgo de que los materiales rechazados se utilicen durante la ejecución de las obras, el Inspector Fiscal 
+                                        tiene la facultad para ordenar su retiro de la zona de faenas.
+                                    </li>
+                                </ol>
+                            </ol>
                         </section>
                         <section>
                             <h3 id="Pagos">Tramitar estados de pago y retenciones</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\ejecucion\Tramitar_Pagos_Retenciones.png" alt="Tramitar estados de pago y retenciones">
+                            <img src="imagenes/ejecucion/Tramitar_Pagos_Retenciones.png" alt="Tramitar estados de pago y retenciones">
+                            <ol>
+                                <li>El estado de pago debe estar firmado por el Inspector Fiscal y por el Director Regional (o nacional). Además, el Director Regional deberá fechar el estado de pago.
+                                </li>
+                                <li> El contratista puede solicitar un anticipo, siempre y cuando las bases administrativas así lo permitan:
+                                    <ul>
+                                        <li>Si el anticipo es a cuenta del precio de la obra, este podra ser de un valor 
+                                            por sobre el 50% del contrato primitivo, descontados los valores proforma, siempre y 
+                                            cuando el contratista caucione una boleta bancaria o poliza de seguro equivalente al monto solicitado, cuya 
+                                            vigencia debe ser equivalente al plazo del contrato mas 6 meses. La solicitud debe ser requerida 
+                                            por el contratista, quien debera suscribir un convenio donde se indique el monto del anticipo, la forma de 
+                                            devolución y reajustabilidad.
+                                        </li>
+                                        <li> El contratista podra solicitar un anticipo para la contratación de valores pro forma, cuando este se trate 
+                                            de cambios de servicio de utilidad pública. El monto no debe exceder el monto a contratar y debera estar garantizado 
+                                            por una boleta bancaria o poliza de seguro por el monto solicitado por una vigencia equivalente al plazo del contrato mas 6 meses.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Fechado el estado de pago, el contratista puede emitir factura para efectuar el pago del avance de obras. Si la fecha de la factura emitida es previa al fechado 
+                                    del estado de pago, se sancionará con una multa ascendente al 10% del valor, excluido el IVA.
+                                </li>
+                                <li>No se procedera con el curso del estado de pago si el contratista no ha protocolizado, suscrito ni entregado las boletas o polizas de garantía, sea esto 
+                                    por perfeccionamiento del contrato post adjudicación o modificación del mismo.
+                                </li>
+                                <li> Del estado de pago se deben retener el 10% del valor de la obra pagada, siempre no se haya enterado el 5% del valor del contrato. Las retenciones no aplicaran 
+                                    si el contrato es por administración delegada.
+                                </li>
+                                <li>En caso de atrasos en la entrega de la obra o atrasos parciales de la misma, se aplicaran las siguientes multas:
+                                    <ul>
+                                        <li>Si se trata del atraso en la entrega de obras, se aplicara una multa diaria equivalente a
+                                            <math style="font-size: 1.2em">                                                
+                                                <mfrac>
+                                                    <mrow>
+                                                        <mi>K</mi> <mo>*</mo> <mi>P</mi>
+                                                    </mrow>
+                                                    <mrow>
+                                                        <mi>d</mi>
+                                                    </mrow>
+                                                </mfrac>
+                                            </math> 
+                                            donde "K" es un factor definido en las bases (ante el silencio de las bases, adopta el valor de 0.5), "P" es el monto de las obras contratadas 
+                                            y "d" es el número de días corridos del contrato. Este valor no puede sobrepasar el 15% del valor del contrato.
+                                        </li>
+                                        <li>Si consiste en un atraso parcial, las bases indicaran el porcentaje de la multa. En caso de que la bases no indique un porcentaje, se 
+                                            aplicara la multa diaria anterior a la parcialidad de la obra atrasada.
+                                        </li>                                
+                                    </ul> </li>
+                                    <li>A cada estado de pago, se debe aplicar el sistema de reajuste estipulado en las bases. Si estas nada dicen, se reajustará en la variación 
+                                        del IPC determinado por el INE, para el mes indemiatamente anterior al estado de pago, con el mes que antecede a la fecha de apertura.
+                                    </li>
+                                    <li>Recibida la solicitud del estado de pago por parte del contratita, el Servicio tiene 30 días para efectuar el pago. En caso contrario, el pago devengará hasta 
+                                        la fecha efectiva del pago, donde se aplicarpa el interés 
+                                    
+                                    </li>
+                            </ol>
+                        </section>
+                        <section>
+                            <h3 id="OEI">Resolver sanción</h3>
+                            <img src="imagenes/ejecucion/OEI.png" alt="Modificación de contrato">
+                        </section>
+                        <section>
+                            <h3 id="Subcontratacion">Resolver solicitud de subcontratación</h3>
+                            <img src="imagenes/ejecucion/Subcontratacion.png" alt="Modificación de contrato">
                         </section>
                         <section>
                             <h3 id="Modificacion">Modificación de contrato</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\ejecucion\Modificacion_Contrato.png" alt="Modificación de contrato">
+                            <img src="imagenes/ejecucion/Modificacion_Contrato.png" alt="Modificación de contrato">
+                            <ol>
+                                <li>Sobre el traspaso del contrato</li>
+                                <ol type="a">
+                                    <li>Se recibe la solicitud para poder hacer traspaso del contrato</li>
+                                    <li>La autoridad competente formaliza el rechazo o aprobación del traspaso 
+                                        mediante una Resolución fundada. 
+                                    </li>
+                                    <li>Si se aprueba el traspaso, la autoridad competente deberá fijar la garantía al nuevo contratista,
+                                        la cual no debe ser menor a la ya constituida.
+                                    </li>
+                                    <li>La recepción de las garantías debe realizarse previo a la suscripción del contrato por parte 
+                                        del nuevo contratista. Además, este debe entregar garantías sobre aquellas retenciones quese hubieren efectuado.
+                                    </li>
+                                    <li>Previo formalización del traspaso, el contratista original debe demostrar el alza de gravámenes y 
+                                        limitaciones de dominio sobre los estados de pago pendientes y futuros.
+                                    </li>
+                                    <li>Teniendo las boletas de garantías y demostrado el alza de gravámenes y dominio sobre los estados 
+                                        de pago, el nuevo contratista procede con la suscripción del contrato.
+                                    </li>
+                                </ol>
+                                <li>Sobre la disminucón de obras</li>
+                                <ol type="a">
+                                    <li>El Ministerio puede solicitar la disminución de cantidad de obras tanto en 
+                                        contratos a series de precios unitarios como en contratos a suma alzada.
+                                    </li>
+                                    <li>Para contratos de suma alzada, la disminución debe comprender partidas o porcentajes 
+                                        de ellas perfectamente determinadas y valorizadas.
+                                    </li>
+                                    <li>Siempre y cuando la disminución no sea a causa de un término anticipado del contrato, 
+                                        el contratista tiene derecho a una indemnización equivalente al 10% de la disminución que resulte 
+                                        de la liquidación final. Para el calculo de la indeminización, no se debe considerar variaciones de los 
+                                        valores pro forma.                                        
+                                    </li>                                
+                                </ol>
+                                <li>Sobre el aumento de obras</li>
+                                <ol type="a">
+                                    <li>El Ministerio puede solicitar aumento de las cantidades de obras en contratos a serie de precios unitarios</li>
+                                    <li>El aumento de las cantidades de obras no puede sobrepasar el 30% de cada partida del presupuesto</li>
+                                    <li>Los precios unitarios a utilizar para el pago de los aumentos de obras seran los convenidos en el contrato.</li>
+                                    <li>La vigencia del contrato se vera aumentada en un valor proporcional al aumento que haya tenido el contrato inicial. Se podrá 
+                                        disponer de un plazo diferente con la autorización de la autoridad pertinente por resolución fundada.</li>
+                                    <li>Para aumento de obras que formen parte de partidas de valores pro forma, se necesitará previa aprobación de la Dirección 
+                                        General de Obras Públicas. Luego, debe resolver la autoridad que corresponda, de acuerdo a la siguiente tabla.
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Contratos iniciales iguales o superiores a 200.000
+                                                    UTM
+                                                </th>                                                                                   
+                                            </tr>
+                                            <tr>
+                                                <th>Autoridad</th>
+                                                <th>Porcentaje del Contrato Inicial</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Director General con V°B° del Ministro de OOPP</td>
+                                                <td>Igual o Superior a 30% e inferior a 50%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Director General</td>
+                                                <td>Inferior a 30% (Con tope de UTM 60.000)</td>
+                                            </tr>                                            
+                                        </table>
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Contratos iniciales inferiores a 200.000 UTM
+                                                </th>                                                                                   
+                                            </tr>
+                                            <tr>
+                                                <th>Autoridad</th>
+                                                <th>Porcentaje del Contrato Inicial</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Director General</td>
+                                                <td>Igual o Superior a 30% e inferior a 50% (Con tope de 60.000 UTM)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Directores Nacionales con V°B° del Director General</td>
+                                                <td>Igual o Superior a 20% e inferior a 30%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Directores Nacionales</td>
+                                                <td>Inferior a 20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Sobre el tope de 60.000 UTM requerirá V°B° Ministro</td>                                                
+                                            </tr>                                              
+                                        </table>
+                                        <table>
+                                            <tr>
+                                                <th colspan="2">Contratos Regionales
+                                                </th>                                                                                   
+                                            </tr>
+                                            <tr>
+                                                <th>Autoridad</th>
+                                                <th>Modificación en UTM</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Jefe de Oficina Regional con V°B° de Director General</td>
+                                                <td>Igual o Superior a 15.000 e inferior a 30.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jefe de Oficina Regional con V°B° de Director Nacional</td>
+                                                <td>Inferior a 15.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jefe de Oficina Regional con V°B° Seremi</td>
+                                                <td>Inferior a 2.500</td>
+                                            </tr>                                                                                          
+                                        </table>                                
+                                </ol>
+                                <li>Sobre aumento de obras urgentes (DTO 75 - Art 103)</li>
+                                <ol type="a">
+                                    <li>En caso de obras urgentes, el Inspector Fiscal podra ordenar la ejecución inmediata de las obras por medio de una 
+                                        Orden de Ejecución inmediata (OEI), sin esperar la resolución o decreto que formalice el aumento de obras en el contrato original.
+                                        Se podra aplicar una OEI cuando el aumento de obras es indispensable para dar continuidad de los trabajos, pudiendo llegar 
+                                        a provocar la paralización temporal, total o parcial de estos.                                    
+                                    </li>
+                                    <li>Para llevar a cabo la OEI, el Inspector Fiscal debe solicitar la aprobación previa de la autoridad que corresponda, junto con los vistos buenos de las
+                                        autoridades que le compete, de acuerdo al reglamento de montos (Decreto 1093 - Modificaciones de Contratos de Obra) (ver tablas anteriores).</li>
+                                    <li>El contratista podrá dar inicio a la ejecución de las obras siempre y cuando la OEI se encuentre aprobada. Además, con el Inspector 
+                                        Fiscal debe actualizar el libro de obras, anotando la fecha de inicio de ellas. De forma paralela, se debe gestionar la formalización 
+                                        del aumento de obras y perfeccionamiento del contrato con las modificaciones.
+                                    </li>
+                                </ol>
+                                </ol>
+                            </ol>
                         </section>
                         <section>
                             <h3 id="Sancion">Aplicar sanción</h3>
-                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\ejecucion\Aplicar_Sancion.png" alt="Aplicar sanciones">
+                            <img src="imagenes/ejecucion/Aplicar_Sancion.png" alt="Aplicar sanciones">
                         </section>
                     </article>
                 </div>     
