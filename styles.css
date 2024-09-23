@@ -35,6 +35,7 @@ html {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-decoration: none; 
+    z-index: 999;
 }
 
 .btn-top:hover {
@@ -81,7 +82,7 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 10px 0;
+    padding: 10px 10px 10px 10px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -90,16 +91,19 @@ nav ul {
 nav ul li {
     margin: 0 20px;
     position: relative;
+    z-index: 999;
 }
 
 nav ul li a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-size: 1em;
     padding: 10px 15px;
     display: block;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 5px;
+    border-radius: 5px;  
+    z-index: 999;  
 }
 
 nav ul li a:hover {
@@ -228,6 +232,11 @@ section:hover {
     /*transform: translateY(-5px); /* Elevación suave en hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hacer hover */
 }
+area:hover{
+    background: linear-gradient(135deg, #c01414, #f0f0f0); /* Cambio de gradiente al pasar el cursor */
+    /*transform: translateY(-5px); /* Elevación suave en hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hacer hover */
+}
 
 section h3 {
     font-family: 'Arial Black', sans-serif; /* Fuente más gruesa para destacar */
@@ -245,7 +254,8 @@ section p {
 }
 
 section img {
-    max-width: 100%; /* Las imágenes se ajustan al ancho del contenedor */
+    width: 100%;/* Las imágenes se ajustan al ancho del contenedor */
+    height: 100%; 
     border-radius: 10px; /* Bordes redondeados para las imágenes */
     margin: 20px 0; /* Espaciado alrededor de las imágenes */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Sombra suave en las imágenes */
@@ -264,6 +274,12 @@ section ol li {
     margin: 10px;
 }
 /* ---Pie de página--- */
+.footer {
+    width: 100% !important;
+    height: 200px !important;
+    bottom: 0px !important;
+    margin-bottom: 0px !important;;
+}
 footer {
     background-color: #0F69B4;
     color: white;

@@ -7,16 +7,25 @@
         <meta name="description" content="Propuesta de visualizador web para el proceso de gestión y administración de contratos de obra pública del MOP, Región de Aysén">
         <title>Visualizador web del PGAC - MOP</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="scripts/jquery.rwdImageMaps.min.js"></script>
+        <script src="scripts/jquery.maphilight.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('img[usemap]').rwdImageMaps();
+            $('img[usemap]').maphilight();
+        });
+        </script>
     </head>
 
     <body>
         <header id="Arriba" class="Encabezado">
             <div class="logo-container">
-                <img id="dirplan" class="logo" src="imagenes/logos/DIRPLAN.jpeg" alt="Logo MOP">
+                <img id="dirplan" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\DIRPLAN.jpeg" alt="Logo MOP">
             </div>
             <h1>Propuesta de visualizador para el Proceso de Gestión y Administración de Contratos de obras públicas</h1>
             <div class="logo-container">
-                <img id="uaysen" class="logo" src="imagenes/logos/UAYSEN.png" alt="Logo UAYSEN">
+                <img id="uaysen" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\UAYSEN.png" alt="Logo UAYSEN">
             </div>
         </header>
         <nav>
@@ -28,7 +37,7 @@
                         <li><a href="licitacion.html">Licitación y adjudicación</a></li>
                         <li><a href="ejecucion.html">Ejecución de obra pública</a></li>
                         <li><a href="recepcion.html">Recepción de obra pública</a></li>
-                        <li><a href="#">Liquidación del contrato</a></li>
+                        <li><a href="liquidacion.html">Liquidación del contrato</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Normativas</a></li>
@@ -55,7 +64,12 @@
                             <p>Fecha de publicación: <time>2024-07-28</time></p>
                         </header>
                         <section>
-                            <img src="imagenes/recepcion/Fase_3.png" alt="Fase de recepción de obra pública">
+                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\recepcion\Fase_3.png" alt="Fase de recepción de obra pública" usemap="#image-map">
+                            <map name="image-map">
+                                <area target="" alt="Recepcionar obra (Provisional)" title="Recepcionar obra (Provisional)" href="#Provisional" coords="585,471,841,625" shape="rect">
+                                <area target="" alt="Calificar gestión del contratista" title="Calificar gestión del contratista" href="#Calificar" coords="1035,473,1278,623" shape="rect">
+                                <area target="" alt="Recepcionar obra (Definitiva)" title="Recepcionar obra (Definitiva)" href="#Provisional" coords="1685,473,1941,625" shape="rect">
+                            </map>
                             <p>La fase de recepción de la obra pública inicia con el terminó de obras estipuladas en el programa oficial de trabajo, lo cual debe ser cotejado por
                                 el Inspector Fiscal una vez que el contratista le solicite la recepción de la obra.
                             </p>
@@ -77,19 +91,229 @@
                             </p>
                         </section>
                         <section>
-                            <h3 id="Provisional">Recepción Provisional</h3>
-                            <img src="imagenes/recepcion/Recepcion_Provisional.png" alt="Recepción Provisional">
-                            <h4>Subsanar observaciones</h4>    
-                            <img src="imagenes/recepcion/Subsanar_Observaciones.png" alt="Subsanar observaciones">                
+                            <h3 id="Provisional">Recepción Provisional</h3>                            
+                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\recepcion\Recepcion_Provisional.png" alt="Recepción Provisional">
+                            <ol>
+                                <li><b>Recibir solicitud:</b>
+                                    <ul>
+                                        <li>La recepción provisional inicia con la entrega de una solicitud por escrito, por parte 
+                                            del contratista al inspector fiscal, para que haga recepción de la obra.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><b>Verificar el término de la obra:</b>
+                                    <ul>
+                                        <li>El inspector fiscal debe verificar el fiel cumplimiento de los planos y
+                                            y especificaciones del contrato.
+                                        </li>
+                                        <li>El inspector fiscal deberá certificar la calidad de las obras que se indique en el proyecto 
+                                            y en el plazo.
+                                        </li>
+                                        <li>Ante la no constatación de los requisitos previos, el inspector fiscal puede rechazar la entrega 
+                                            de las obras solicitadas, donde el contratista deberá subsanar las observaciones levantadas por el inspector fiscal 
+                                            para proceder, nuevamente, con la solicitud de recepcion.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><b>Comunicar término de la obra a la Dirección:</b>
+                                    <ul>
+                                        <li>Verificado el correcto cumplimiento de los requisitos del contrato, el inspector fiscal 
+                                            deberá comunicar a la Dirección.
+                                        </li>
+                                        <li>La comunicación a la Dirección se realiza por oficio, el cual debe ser remitido en un plazo 
+                                            no superior a 5 días, post solicitud de recepción.
+                                        </li>
+                                        <li>En el oficio se deberá indicar la fecha en que el contratista pone en término la ejecución 
+                                            de las obras.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><b>Notificar requerimiento al SEREMI para designar la comisión de recepción:</b>
+                                    <ul>
+                                        <li>El requerimiento consiste en una resolución dirigida al SEREMI.</li>
+                                        <li>La resolución debe contener la carta de solicitud de recepción de obras del contratista, el oficio emitido 
+                                            por el inspector fiscal, la propuesta para designar a la comisión de recepción  y el V.B del Director.
+                                        </li>  
+                                        <li>El plazo para emitir la resolución, no debe sobrepasar los 20 días post recepción del 
+                                            oficio emitido por el inspector fiscal
+                                        </li>
+                                        <li>Si los trabajos fueron realizado por el Cuerpo Militar del Trabajo (CMT), la resolución debe ser 
+                                            dictada por el Director General de Obras Públicas.
+                                        </li>                                      
+                                    </ul>
+                                </li>
+                                <li><b>Tramitar resolución:</b>
+                                    <ul>
+                                        <li>El SEREMI debe tramitar la resolución dictada por el Director Regional del Servicio, donde 
+                                            se indiquen los integrantes que formaran parte de la comisión de recepción.
+                                        </li>
+                                        <li>Si se trata de la recepción de una Obra Menor, la comisión estará conformada por dos profesionales 
+                                            universitarios propuestos por el SEREMI, donde uno de ellos debe ser de la Dirección.
+                                        </li>
+                                        <li>Si se trata de la recepción de una Obra Mayor, la comisión estará conformada por el Secretario Regional, el Jefe del Departamento pertinente
+                                             y el Director Regional. No obstante, cada autoridad pertinente podrá designar en su reemplazo, un profesional universitario que radique en la región, siempre y 
+                                            cuando este sea funcionario del Ministerio</li>
+                                    </ul>
+                                </li>
+                                <li><b>Emitir informe detallado con las obras ejecutadas:</b>
+                                    <ul>
+                                        <li>En caso de que la recepción de las obras esa causa de una liquidación anticipada del contrato, 
+                                            la comisión designada deberá emitir un informe detallado de las obras realizadas y las que resten por 
+                                            terminar, valorizando cada ítem, independiente de si este se encuentra completo o no.
+                                        </li>
+                                        <li>El plazo para emitir dicho informe no deberá sobrepasar los 20 días desde la tramitación de la resolución 
+                                            que designó a la comisión.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><b>Verificar correcta ejecución de la obra:</b>
+                                    <ul>
+                                        <li>La comisión de recepción provisional deberá verificar la correcta ejecución de las obras 
+                                            entregadas por el contratista.
+                                        </li>
+                                        <li>A la recepción, se podrá invitar al inspector fiscal y al contratista (o representante legal), mediante una citación previa.
+                                        </li>
+                                        <li>Producto de la verificación correcta de la ejecución de las obras, la comisión deberá emitir un informe dentro de los 20 días post 
+                                            tramitación de la resolución que designó a la comisión.
+                                        </li>
+                                        <li>Si durante la verificación de la correcta ejecución de la obras se constata 
+                                            queno se cumplen con los requisitos estipulados en el contrato, se procedera al rechazo de la recepción provisional de las obras.</li>                                        
+                                    </ul>
+                                </li> 
+                                <li><b>Firmar acta de recepción conforme:</b>
+                                    <ul>
+                                        <li>La recepción de la obra se debe formalizar por medio de la firma del acta de recepción conforme</li>
+                                        <li>El acta debe estipular señalar la fecha de término de obras la indicada en el oficio emitido por el inspector fiscal</li>
+                                        <li>Al acta de recepción se le debe anexar el presupuesto de las obras recibidas</li>
+                                    </ul>
+                                </li>
+                                <li><b>Sobre defectos detectados a subsanar:</b>
+                                    <ul>
+                                        <li>Si la comisión de recepción constata que los trabajos no se encuentran terminados o ejecutados de acuerdo con los 
+                                            planos, especificaciones, reglas técnicas o se usaron materiales de mala calidad y/o defectuosos, no se dara curso a la recepción.
+                                        </li>
+                                        <li>La comisión deberá elaborar un informe detallado a la Dirección con las causales del rechazo y observaciones a subsanar de la obra,
+                                            junto con proponer un periodo de tiempo para que el contratista subsane a su costa, las observaciones levantadas por la comisión.
+                                        </li>
+                                        <li>Si la comisión considera que los defectos de la obra no influyen en la explotación de la misma, 
+                                            podrá proceder a realizar una recepción con reservas.
+                                        </li>
+                                        <li>La Dirección deberá recibir el informe con los fundamentos del rechazo, el cual le servira de antecedentes 
+                                            para fijar un plazo para subsanar los defectos detectados. Este acto se formaliza y se comunica al 
+                                            contratista con la emisión de un oficio.
+                                        </li>
+                                        <li>Durante el transcurso del periodo destinado para realizar las reparaciones, el contratista puede solicitar, fundadamente, 
+                                            una ampliación en el plazo para poder llevarlas a cabo. Si la Dirección aprueba la solicitud, deberá modificar 
+                                            el periodo destinado a subsanar los defectos previamente detectados.
+                                        </li>
+                                        <li>Pasado el plazo, el contratista pudo o no haber subsanado las observaciones. 
+                                            Si el contratista subsanó las observaciones,este debe solicitar la recepción de obras al inspector fiscal,
+                                            repitiendose el flujo de actividades inicial, sin pasar por notificar a la Dirección, sino que comunica a la comisión de 
+                                            recepción si la solicitud es aprobada. 
+                                        </li>
+                                        <li>Si el contratista no subsanó las observaciones, la Dirección queda facultada de realizar las reparaciones a costa del contratista. En caso 
+                                            de que se trate de una Obra Menor, se podrán realizar las reparaciones por  
+                                            trato directo o administración directa. Para costear las reparacione primero se hará 
+                                            cargo a las retenciones y luego a las garantías del contrato. Además, la Dirección podrá solicitar que al contratista 
+                                            se le aplique una sanción, que se traduce en la suspensión del Registro. Finalmente, se dejará constancia de la falta  
+                                            en la Hoja de Vida del Constratista.
+                                        </li>                                        
+                                    </ul>
+                                </li>                               
+                            </ol>
+                            <!--<h4>Subsanar observaciones</h4>    
+                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\recepcion\Subsanar_Observaciones.png" alt="Subsanar observaciones">  -->              
                         </section>
                         <section>
                             <h3 id="Calificar">Calificar gestión del contratista</h3>
-                            <img src="imagenes/recepcion/Calificacion.png" alt="Calificar gestión del contratista">
+                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\recepcion\Calificacion.png" alt="Calificar gestión del contratista">
+                            <ol>
+                                <li><b>Acta de recepción conforme:</b>
+                                <ul>
+                                    <li>Las gestiones para calificar al contratista inician una vez emitida el acta de recepción conforme</li>
+                                </ul></li>
+                                <li><b>Entregar antecedentes de la ejecución de la obra:</b>
+                                <ul>
+                                    <li>La Dirección deberá poner a disposisión de la comisión que haya realizado la recepción provisional o única, los antecedentes 
+                                        relacionados a la ejecución de las obras para proceder con su análisis y calificación del desempeño del contratista (Art 181).
+                                    </li>
+                                </ul></li>
+                                <li><b>Emitir informe de término de obra:</b>
+                                <ul>
+                                    <li>El inspector fiscal, una vez terminada la ejecución de las obras, deberá emitir un informe de término de obras, donde se abarquen 
+                                        aspectos sobre el cumplimiento de las especificaciones técnicas, cumplimiento de las bases administrativas, cumplimiento de los plazos parciales 
+                                        y total, y Cumplimiento de las Normas sobre Prevención de Riesgos y estadísticas relativas a accidentabilidad (Art 181).
+                                    </li>
+                                    <li>Para la redacción del informe, se tendra como insumo las anotaciones realizadas en el libro de obras (Art 181).</li>
+                                </ul></li>
+                                <li><b>Enviar informe al contratista:</b>
+                                <ul>
+                                    <li>El Jefe de Departamento pertinente, enviará al contratista el informe de término de obras al contratista (Art 181).</li>
+                                    <li>El contratista, con la revisión del informe previamente entregado, podra entregar al Jefe del Departamento, antecedentes aclaratorios que respondan 
+                                        a los antecedentes expresados en el informe (Art 181).
+                                    </li>
+                                </ul></li>
+                                <li><b>Reunir antecedentes:</b>
+                                <ul>
+                                    <li>La comisión que realizó la recepción provisional (o única) estará a cargo de calificar la gestión del contratista. Para ello,
+                                        deberá reunir los antecedentes que fundamenten su calificación (Art 180).
+                                    </li>                                    
+                                    <li>Los antecedentes requeridos son las anotaciones realizadas en el Libro de Obras, informes elaborados por 
+                                        la inspección fiscal para este fin y demás antecedentes entregados por la Dirección (Art 181). </li>
+                                    <li>Si el contratista entrego antecedentes aclaratorios, estos también formarán parte de los antecedentes de calificación (Art 181).</li>
+                                </ul></li>
+                                <li><b>Emitir informe de evaluación:</b>
+                                <ul>
+                                    <li>Se deberá emitir el informe dentro de 15 días seguidos, post acta de recepción conforme (Art 179).</li>
+                                    <li>El informe debe contener al menos la calificación del contratista y nómina de subcontratistas y funcionarios del MOP
+                                        que participaron en la obra con sus correspondientes volumenes de obra por especialidad (Art 179).
+                                    </li>
+                                    <li>La calificación del contratista consiste en una nota final de 1 a 7 que considere los items y ponderaciones de la siguiente tabla (Art 180):
+                                        <table>
+                                            <tr>
+                                                <th>Items</th>
+                                                <th>Ponderación</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Calidad de la construcción, o cumplimiento de las especificaciones técnicas y de los planos,
+                                                    y normativas medioambientales</td>
+                                                <td>Ponderación A (Fijado en las bases. No debe ser inferior a 0,65)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cumplimiento de los plazos</td>
+                                                <td>Ponderación B (Fijado en las bases)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cumplimiento de las bases administrativas</td>
+                                                <td>Ponderación C (0,10)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cumplimiento de las Normas sobre Prevención de Riesgos y estadísticas relativas a accidentabilidad.</td>
+                                                <td>Ponderación D (0,10)</td>
+                                            </tr>
+                                        </table> </li>
+                                    <li>La ponderaciones A y B deberán sumar 0,8. Si las bases nada dicen, la ponderación A sera equivalente a 0,70 y B sera 0,10 (Art 180).</li>
+                                    <li>La calificación será resultado de completar el formulario de evaluación de desempeño del contratista (Art 182)</li>
+                                </ul></li>
+
+                                <li><b>Remitir informe:</b>
+                                    <ul>
+                                        <li>La comisión deberá entregar el informe a la Dirección (Art 179)</li>
+                                        <li>También, deberá entregar una copia del informe al Registro General de Contratistas, quien actualizará la Hoja de Vida 
+                                            del contratista evaluado(Art 179)</li>
+                                    </ul>
+                                </li>
+                                <li><b>Notificar calificación al contratista:</b>
+                                <ul>
+                                    <li>La Dirección tendra la responsabilida de informar al contratista sobre la calificación obtenida (Art 179)</li>
+                                    <li>El contratista puede apelar a la calificación obtenida dentro de los 30 días siguientes desde su notificación (Art 183). </li>
+                                </ul></li>
+                            </ol>
                         </section>
-                        <section>
+                        <!--<section>
                             <h3 id="Definitiva">Recepción definitiva</h3>
-                            <img src="imagenes/recepcion/Recepcion_Definitiva.png" alt="Recepción definitiva">
-                        </section>
+                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\recepcion\Recepcion_Definitiva.png" alt="Recepción definitiva">
+                        </section>-->
                     </article>
                 </div>     
             </div>

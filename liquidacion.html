@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="Propuesta de visualizador web para el proceso de gestión y administración de contratos de obra pública del MOP, Región de Aysén">
+        <title>Visualizador web del PGAC - MOP</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="scripts/jquery.rwdImageMaps.min.js"></script>
+        <script src="scripts/jquery.maphilight.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('img[usemap]').rwdImageMaps();
+            $('img[usemap]').maphilight();
+        });
+        </script>
+    </head>
+
+    <body>
+        <header id="Arriba" class="Encabezado">
+            <div class="logo-container">
+                <img id="dirplan" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\DIRPLAN.jpeg" alt="Logo MOP">
+            </div>
+            <h1>Propuesta de visualizador para el Proceso de Gestión y Administración de Contratos de obras públicas</h1>
+            <div class="logo-container">
+                <img id="uaysen" class="logo" src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\logos\UAYSEN.png" alt="Logo UAYSEN">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">BPMN</a></li>
+                <li><a href="#">Fases de procesos</a>
+                    <ul>
+                        <li><a href="licitacion.html">Licitación y adjudicación</a></li>
+                        <li><a href="ejecucion.html">Ejecución de obra pública</a></li>
+                        <li><a href="recepcion.html">Recepción de obra pública</a></li>
+                        <li><a href="#">Liquidación del contrato</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Normativas</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Contenido principal -->
+            <div class="Contenido">
+                <a href="#Arriba" class="btn-top">Arriba</a> 
+                <!--<aside>
+                    <div class="Subprocesos">
+                        <h3>Subprocesos</h3>
+                        <ul>
+                            <li><a href="#Provisional">Recepción provisional</a></li>
+                            <li><a href="#Calificar">Calificar gestión del contratista</a></li>
+                            <li><a href="#Definitiva">Recepción definitiva</a></li>                            
+                        </ul>
+                    </div>
+                </aside>-->
+                <div class="Diagramas" style="width: 100%; margin: auto;">
+                    <article>
+                        <header>
+                            <h2> Fase de liquidacion del contrato </h2>
+                            <p>Fecha de publicación: <time>2024-07-28</time></p>
+                        </header>
+                        <section>
+                            <img src="G:\Mi unidad\2024-1\DEFINITIVO_PROYECTO_TITULO\PAGINA\imagenes\liquidacion\Fase_4.png" alt="Fase de recepción de obra pública">
+                            <ol>
+                                <li><b>Formular liquidación:</b>
+                                <ul>
+                                    <li>Se debe formular la liquidación del contrato dentro de los 90 días siguientes 
+                                        de la recepción definitiva o única (Art 184).
+                                    </li>
+                                    <li>El plazo se puede prorrogar hasta 180 días, siempre y cuando sea debidamente justificado por 
+                                        el Director Nacional y aprobado por el Director General (Art 184).</li>
+                                </ul></li>
+                                <li><b>Restituir gastos adicionales:</b>
+                                <ul>
+                                    <li>Si la liquidación no se formula dentro de los 90 días (o 180 días con prorroga), la Dirección deberá 
+                                        restituir al contratista los gastos adicionales producto de mantener en vigencia la boleta de garantía 
+                                        o póliza del fiel cumplimiento del contrato (Art 184). 
+                                    </li>
+                                </ul></li>
+                                <li><b>Devolver garantía de fiel cumplimiento del contrato:</b>
+                                <ul>
+                                    <li>Dentro de los 90 días siguientes, contados desde la fecha del acta de recepción definitiva o única, 
+                                        se debe realizar la devolución de la ganrantía del fiel cumplimiento del contrato (Art 184)</li>
+                                    <li>El plazo se puede prorrogar hasta 180 días, siempre y cuando sea debidamente justificado por 
+                                        el Director Nacional y aprobado por el Director General (Art 184).
+                                    </li> 
+                                </ul></li>
+                                <li><b>Informar al Registro General de Contratistas:</b>
+                                <ul>
+                                    <li>Dentro de los mismos plazos de la formulación de la liquidación y devolución de garantías, de debe informar 
+                                        al Registro General de Contratistas sobre el monto final del contrato y su fecha de liquidación (Art 184).
+                                    </li>
+                                </ul></li>
+                            </ol>
+                        </section>                    
+                    </article>
+                </div>     
+            </div>
+        </main>
+        <footer>
+            <address>
+                valentin.solis@alumnos.uaysen.cl
+            </address>
+            Enlaces a redes sociales
+           <p>Copyright</p> 
+        </footer>
+    </body>
+</html>
