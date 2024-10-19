@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="Propuesta de visualizador web para el proceso de gestión y administración de contratos de obra pública del MOP, Región de Aysén">
+        <title>Visualizador web del PGAC - MOP</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="scripts/jquery.rwdImageMaps.min.js"></script>
+        <script src="scripts/jquery.maphilight.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('img[usemap]').rwdImageMaps();
+            $('img[usemap]').maphilight();
+        });
+        </script>
+        </head>
+
+    <body>
+        <header class="Encabezado">
+            <div class="logo-container">
+                <img id="dirplan" class="logo" src="imagenes/logos/DIRPLAN.jpeg" alt="Logo MOP">
+            </div>
+            <h1 id="Arriba">Propuesta de visualizador para el Proceso de Gestión y Administración de Contratos de obras públicas</h1>
+            <div class="logo-container">
+                <img id="uaysen" class="logo" src="imagenes/logos/UAYSEN.png" alt="Logo UAYSEN">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">BPMN</a></li>
+                <li><a href="#">Fases de procesos</a>
+                    <ul>
+                        <li><a href="licitacion.html">Licitación y adjudicación</a></li>
+                        <li><a href="ejecucion.html">Ejecución de obra pública</a></li>
+                        <li><a href="recepcion.html">Recepción de obra pública</a></li>
+                        <li><a href="liquidacion.html">Liquidación del contrato</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Normativas</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Contenido principal -->
+            <article>
+                <section>
+                    <header>
+                        <h2> Proceso de Gestión y Administración de Contratos </h2>
+                        <p>Fecha de publicación: <time>2024-07-28</time></p>
+                    </header>
+                    <img src="imagenes/inicio/Proceso.png" usemap="#image-map" alt="Proceso de gestión y administración de contratos">
+                    <map name="image-map">
+                        <area alt="Fase de Licitación y Adjudicación" title="Fase de Licitación y Adjudicación" href="licitacion.html" coords="2035,2003,223,40" shape="rect">
+                        <area alt="Fase de Ejecución de Obras" title="Fase de Ejecución de Obras" href="ejecucion.html" coords="2073,40,5206,1996" shape="rect">
+                        <area alt="Fase de Recepción de Obras" title="Fase de Recepción de Obras" href="recepcion.html" coords="6647,40,5231,1993" shape="rect">
+                        <area alt="Fase de Liquidación del Contrato" title="Fase de Liquidación del Contrato" href="liquidacion.html" coords="6679,40,7171,1993" shape="rect">
+                    </map>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <address>
+                valentin.solis@alumnos.uaysen.cl
+            </address>
+            Enlaces a redes sociales
+           <p>Copyright</p> 
+        </footer>
+    </body>
+</html>
