@@ -50,7 +50,11 @@ header.Encabezado {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #fff;
+    /*background-image: url("fondo.png");*/
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("imagenes/fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #000000;
 }
 
@@ -60,7 +64,7 @@ header.Encabezado {
     justify-content: center;
 }
 
-h1 {
+h1 {/* Propuesta de visualizador, unico h1*/
     flex: 2;
     text-align: center;
     font-size: 1.5em;
@@ -140,8 +144,8 @@ main {
 }
 
 h2 {
-    text-align: center;
-    color: #ddd;
+    text-align: left;
+    color: #000000;
 }
 div.Contenido {
     display: flex;
@@ -150,11 +154,56 @@ div.Contenido {
 }
 
 div.Contenido aside {
+    position:sticky;
     width: 15%;
     background-color: #EB3C46;
     color: white;
     padding: 20px;
     border-radius: 10px;
+}
+/*Normativas*/
+#normativas {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-normativa{
+    display: flex;
+    flex-direction: row;
+}
+.lista-normativa div{
+    width: 33%;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* BPMN */
+.notacion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.notacion div img {
+    max-height: 500px;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+}
+.notacion div {
+    text-align: center;  /* Centra el contenido en el contenedor */
+}
+
+.notacion p {
+    text-align: justify;
+    
+}
+.notacion li {
+    text-align: justify;
+    
 }
 
 /* Botonera (Aside) */
@@ -164,16 +213,17 @@ aside ul {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaciado entre botones */
+    /*gap: 15px; /* Espaciado entre botones */
 }
 
 aside ul li {
     text-align: center;
+    padding: 5px; /*Espaciado entre botones*/
 }
 
 aside ul li a {
     display: block;
-    padding: 15px 20px; /* Tamaño del botón */
+    padding: 5px 13px; /* Tamaño del botón */
     background-color: #0F69B4; /* Color de fondo del botón */
     color: white; /* Color del texto */
     text-decoration: none;
@@ -183,7 +233,7 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-    background-color: #2678C0; /* Color de fondo en hover */
+    background-color: #2678C0; /* Color de fondo al pasar el cursor */
     transform: translateY(-2px); /* Efecto de "elevación" al hacer hover */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hacer hover */
 }
@@ -196,7 +246,7 @@ aside ul li a:active {
 
 div.Subprocesos {
     position: sticky;
-    top: calc(100% * 0.1);
+    top: calc(100% * 0.025);
     bottom: calc(100% * 0.25);
 }
 
@@ -240,8 +290,8 @@ area:hover{
 
 section h3 {
     font-family: 'Arial Black', sans-serif; /* Fuente más gruesa para destacar */
-    color: #EB3C46; /* Color rojo para los títulos de las secciones */
-    text-transform: uppercase; /* Mayúsculas para hacer el título más impactante */
+    color: #000000; /* Color rojo para los títulos de las secciones */
+    
     letter-spacing: 1px; /* Espaciado entre letras para mejorar la legibilidad */
     margin-bottom: 15px; /* Espaciado inferior entre el título y el contenido */
 }

@@ -31,7 +31,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">BPMN</a></li>
+                <li><a href="bpmn.html">BPMN</a></li>
                 <li><a href="#">Fases de procesos</a>
                     <ul>
                         <li><a href="licitacion.html">Licitación y adjudicación</a></li>
@@ -40,7 +40,7 @@
                         <li><a href="liquidacion.html">Liquidación del contrato</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Normativas</a></li>
+                <li><a href="normativa.html">Normativas</a></li>
             </ul>
         </nav>
 
@@ -49,16 +49,88 @@
             <article>
                 <section>
                     <header>
-                        <h2> Proceso de Gestión y Administración de Contratos </h2>
-                        <p>Fecha de publicación: <time>2024-07-28</time></p>
+                        <h2> Notación y modelado de procesos de negocios </h2>
                     </header>
-                    <img src="imagenes/inicio/Proceso.png" usemap="#image-map" alt="Proceso de gestión y administración de contratos">
-                    <map name="image-map">
-                        <area alt="Fase de Licitación y Adjudicación" title="Fase de Licitación y Adjudicación" href="licitacion.html" coords="2035,2003,223,40" shape="rect">
-                        <area alt="Fase de Ejecución de Obras" title="Fase de Ejecución de Obras" href="ejecucion.html" coords="2073,40,5206,1996" shape="rect">
-                        <area alt="Fase de Recepción de Obras" title="Fase de Recepción de Obras" href="recepcion.html" coords="6647,40,5231,1993" shape="rect">
-                        <area alt="Fase de Liquidación del Contrato" title="Fase de Liquidación del Contrato" href="liquidacion.html" coords="6679,40,7171,1993" shape="rect">
-                    </map>
+                    <p>La especificación BPMN (Business Process Model and Notation) proporciona una notación gráfica 
+                        estandarizada para modelar procesos empresariales de forma clara y comprensible tanto para usuarios 
+                        empresariales como para técnicos. Su principal objetivo es facilitar la comunicación entre quienes diseñan, 
+                        implementan y gestionan procesos de negocio, permitiendo que los diagramas BPMN puedan convertirse en componentes 
+                        de software. La notación, similar a un diagrama de flujo, es independiente de entornos específicos y 
+                        está estandarizada por la norma ISO/IEC 19510, que unifica las mejores prácticas en modelado de procesos. 
+                        BPMN es uno de los tres estándares clave en la mejora de procesos junto a CMMN y DMN.</p>
+                    <div id="contenedor-notación">
+                        <h3>Actividades</h3>
+                        <div class="notacion">
+                            <div><p>Las actividades son trabajos o tareas ejecutadas por miembros de una organización, 
+                                ya sea de manera manual o automática. Se clasifican en tareas y subprocesos. 
+                                Un subproceso es una actividad compuesta que forma parte de un proceso más amplio. 
+                                Compuesta significa que el subproceso puede desglosarse en niveles más detallados, 
+                                ya que contiene figuras y elementos adicionales dentro de sí mismo.</p></div>
+                            <div><img src="imagenes/bpmn/actividades.png"  alt="BPMN - Actividades"></div>
+                        </div>
+                       
+
+                        <h3>Eventos</h3>
+                        <div class="notacion">
+                            <div><p>En evento representa algo que ocurre durante el proceso, 
+                                afectando su flujo y produciendo un resultado. Estos pueden ser de inicio, intermedios o de cierre.</p>
+                                <ul>
+                                    <li>Los eventos de inicio indican el inicio del flujo de trabajo. Todos los diagramas de procesos deben tener un único evento de inicio.</li>
+                                    <li>Los eventos de cierre indican un fin a una rama del flujo de trabajo. Un diagrama de procesos puede tener múltiples eventos de cierre.</li>
+                                    <li>Los eventos intermedio representan situaciones que se dan a lo largo del flujo de trabajo.</li>
+                                </ul>                            
+                            </div>
+                            <div><img src="imagenes/bpmn/evento.png"  alt="BPMN - Eventos"></div>
+                        </div>
+
+                        <h3>Swimlanes</h3>
+                        <div class="notacion">
+                            <div><p>El pool o contenedor agrupa un proceso completo, integrando los flujos de 
+                                secuencia que conectan las actividades internas del proceso. Cada proceso debe estar 
+                                contenido dentro de un pool, y es necesario al menos uno para representar el proceso en su totalidad.
+                            Dentro del pool, loscarriles funcionan como subparticiones que diferencian roles, 
+                                posiciones, departamentos u otras unidades organizativas. Estas divisiones facilitan la visualización 
+                                de las responsabilidades específicas de cada área dentro del flujo de trabajo.
+                            Por otro lado, una fase también constituye una subpartición del proceso, pero está 
+                                destinada a representar las distintas etapas o fases que el proceso atraviesa.</p></div>
+                            
+                            <div><img src="imagenes/bpmn/swimlanes.png"  alt="BPMN - Swimlanes"></div>                            
+                        </div>
+
+                        <h3>Compuertas</h3>
+                        <div class="notacion">
+                            <div><p>Las compuertas controlan la divergencia y convergencia de los flujos de 
+                                secuencia en un proceso, determinando cómo se ramifican, combinan o unen 
+                                los caminos posibles. Funcionan como mecanismos que permiten o restringen el paso 
+                                de los flujos, gestionando así las decisiones y condiciones en el proceso.</p></div>
+                            <div><img src="imagenes/bpmn/compuerta.png"  alt="BPMN - Compuertas"></div>
+                        </div>
+
+                        <h3>Conectores</h3>
+                        <div class="notacion">
+                            <div><p>Un conector de flujo de secuencia se utiliza para mostrar el orden en que las actividades 
+                                se ejecutarán dentro del proceso. La asociación sirve para vincular información y artefactos 
+                                con los objetos de flujo, y también se emplea para representar las tareas que componen una actividad. 
+                                Por último, el flujo de mensaje se utiliza para ilustrar el intercambio de mensajes entre dos entidades 
+                                que están preparadas para enviarlos y recibirlos.</p></div>
+                                <div><img src="imagenes/bpmn/conector.png"  alt="BPMN - Conectores"></div>
+                        </div>
+                        
+                    
+                        
+                                            
+                        <h3>Artefactos y datos</h3>
+                        <div class="notacion">
+                            <div><p>Los artefactos permiten agregar información adicional al proceso, sin que esta 
+                                esté directamente vinculada al flujo principal.</p>
+                            <p>Por otro lado, los datos proporcionan un mecanismo que permite a las actividades recuperar o actualizar 
+                                información almacenada, la cual persistirá más allá del alcance del proceso. Además, detallan cómo los 
+                                documentos, datos y otros objetos son utilizados y actualizados a lo largo del proceso.</p></div>
+                                <div><img src="imagenes\bpmn\datos.png"  alt="BPMN - Artefactos y datos"></div>
+                        </div>    
+                    
+                        
+                    </div>
                 </section>
             </article>
         </main>

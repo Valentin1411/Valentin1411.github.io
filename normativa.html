@@ -19,11 +19,11 @@
         </head>
 
     <body>
-        <header class="Encabezado">
+        <header id="Arriba" class="Encabezado">
             <div class="logo-container">
                 <img id="dirplan" class="logo" src="imagenes/logos/DIRPLAN.jpeg" alt="Logo MOP">
             </div>
-            <h1 id="Arriba">Propuesta de visualizador para el Proceso de Gestión y Administración de Contratos de obras públicas</h1>
+            <h1>Propuesta de visualizador para el Proceso de Gestión y Administración de Contratos de obras públicas</h1>
             <div class="logo-container">
                 <img id="uaysen" class="logo" src="imagenes/logos/UAYSEN.png" alt="Logo UAYSEN">
             </div>
@@ -31,7 +31,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">BPMN</a></li>
+                <li><a href="bpmn.html">BPMN</a></li>
                 <li><a href="#">Fases de procesos</a>
                     <ul>
                         <li><a href="licitacion.html">Licitación y adjudicación</a></li>
@@ -40,7 +40,7 @@
                         <li><a href="liquidacion.html">Liquidación del contrato</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Normativas</a></li>
+                <li><a href="normativa.html">Normativas</a></li>
             </ul>
         </nav>
 
@@ -48,26 +48,31 @@
             <!-- Contenido principal -->
             <article>
                 <section>
-                    <header>
-                        <h2> Proceso de Gestión y Administración de Contratos </h2>
-                        <p>Fecha de publicación: <time>2024-07-28</time></p>
-                    </header>
-                    <img src="imagenes/inicio/Proceso.png" usemap="#image-map" alt="Proceso de gestión y administración de contratos">
-                    <map name="image-map">
-                        <area alt="Fase de Licitación y Adjudicación" title="Fase de Licitación y Adjudicación" href="licitacion.html" coords="2035,2003,223,40" shape="rect">
-                        <area alt="Fase de Ejecución de Obras" title="Fase de Ejecución de Obras" href="ejecucion.html" coords="2073,40,5206,1996" shape="rect">
-                        <area alt="Fase de Recepción de Obras" title="Fase de Recepción de Obras" href="recepcion.html" coords="6647,40,5231,1993" shape="rect">
-                        <area alt="Fase de Liquidación del Contrato" title="Fase de Liquidación del Contrato" href="liquidacion.html" coords="6679,40,7171,1993" shape="rect">
-                    </map>
+                    <div id="normativas">
+                        <div class="lista-normativa">
+                            <div><a href="https://www.bcn.cl/leychile/navegar?idNorma=233103"><h3>Decreto 75: Reglamento para contratos de obras públicas</h3></a>
+                            <p>Normativa que regula la administración y gestión de los contratos de obras públicas ejecutados por el Ministerio de Obras Públicas.
+                            </p></div>
+                            <div><a href="https://www.bcn.cl/leychile/navegar?idNorma=217943"><h3>Decreto 1093: Reglamento de montos de 
+                                contratos de obras públicas</h3></a>
+                            <p>Normativa que regula la resolución de contratos de ejecución de obras, estudios, proyectos, asesorías, y sus modificaciones, 
+                                liquidaciones y cancelaciones. </p></div>
+                            <div><a href="https://www.bcn.cl/leychile/navegar?idNorma=97993"><h3>Decreto con fuerza de Ley 850</h3></a>
+                            <p>Normativa que establece la organización y funciones del Ministerio de Obras Públicas</p></div>
+                        </div>
+                    </div>
                 </section>
             </article>
         </main>
         <footer>
+            <p>Propuesta de desarrollo de un visualizador web como proyecto de tesis para optar al grado de Ingeniero Civil Industrial en la Universidad de Aysén.</p>
+            <p>Datos de contacto:</p>
             <address>
-                valentin.solis@alumnos.uaysen.cl
+                valentin.solis@alumnos.uaysen.cl 
             </address>
-            Enlaces a redes sociales
-           <p>Copyright</p> 
+            <address>
+                valentinsolis1411@gmail.com
+            </address>
         </footer>
     </body>
 </html>
